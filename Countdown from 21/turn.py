@@ -37,6 +37,10 @@ def play_computer_turn(n):
         c_coins = (n - 1)
         print('Computer takes one coin.')
         return c_coins
+    elif n == 13:
+        c_coins = (n - 1)
+        print('Computer takes one coin.')
+        return c_coins
     
     elif n - 1 == 0:
         print('Computer takes one coin.')
@@ -79,7 +83,6 @@ def play_computer_turn(n):
         return c_coins
     
     elif n > 4:
-        
         c_coins = (n - 3)
         print('Computer takes three coins.')
         return c_coins
@@ -92,5 +95,7 @@ def play_computer_turn(n):
     else:
         print("Computer Wins!!")
         return 0 
- 
+    # 2. If computer wins, indicate that and return 0
+    # 3. return number of coins remaining
+    # You must implement this function 
 pass
